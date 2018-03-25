@@ -49,8 +49,8 @@ void lcd_init(void)
   __delay_ms(200);
   LCD_DATA=2; //FOUR BIT MODE.
   LCD_STROBE();
-	lcd_write(0x28);// init LCD in 4-bit mode with 2 lines and 5x7 matrix
-	lcd_write(0xF); // Display On, Cursor On, Cursor Blinking
-	lcd_clear();	// Clear screen
-	lcd_write(0x6); // Set entry Mode
+  lcd_write(0x28);// init LCD in 4-bit mode with 2 lines and 5x7 matrix
+  lcd_write(0xF); // Display On, Cursor On, Cursor Blinking
+  lcd_clear();	// Clear screen
+  lcd_write(0x6); // Set entry Mode
 }
